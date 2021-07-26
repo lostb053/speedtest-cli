@@ -1185,9 +1185,8 @@ class Speedtest(object):
 
         ignore_servers = []
         try:
-            if i:
-                for i in server_config['ignoreids'].split(','):
-                    ignore_servers.append(int(i))
+            for i in server_config['ignoreids'].split(','):
+                ignore_servers.append(int(i))
         except ValueError:
             pass
 
