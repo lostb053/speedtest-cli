@@ -1188,8 +1188,8 @@ class Speedtest(object):
             if i:
                 for i in server_config['ignoreids'].split(','):
                     ignore_servers.append(int(i))
-                except ValueError:
-                    pass
+            except ValueError:
+                pass
 
         ratio = int(upload['ratio'])
         upload_max = int(upload['maxchunkcount'])
